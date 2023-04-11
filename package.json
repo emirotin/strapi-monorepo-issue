@@ -1,0 +1,26 @@
+{
+	"name": "proj",
+	"version": "0.0.0",
+	"private": true,
+	"workspaces": [
+		"apps/*",
+		"packages/*"
+	],
+	"scripts": {},
+	"devDependencies": {
+		"dotenv-cli": "^7.2.1",
+		"eslint-config-custom": "workspace:*",
+		"next": "^13.2.4",
+		"prettier": "^2.8.7",
+		"prettier-plugin-tailwindcss": "^0.2.6",
+		"typescript": "^5.0.3"
+	},
+	"engines": {
+		"node": "18.15.0"
+	},
+	"packageManager": "pnpm@8.2.0",
+	"volta": {
+		"node": "18.15.0",
+		"pnpm": "8.2.0"
+	}
+}

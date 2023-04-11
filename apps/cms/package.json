@@ -1,0 +1,32 @@
+{
+	"name": "cms",
+	"private": true,
+	"version": "1.0.0",
+	"description": "CMS",
+	"scripts": {
+		"dev": "dotenv -e ../../.env -- strapi develop",
+		"start": "strapi start",
+		"build": "strapi build",
+		"strapi": "strapi",
+		"lint": "eslint . --fix --ext .ts"
+	},
+	"devDependencies": {
+		"@strapi/typescript-utils": "4.9.0",
+		"@types/node": "^18.15.11",
+		"eslint-config-custom": "workspace:*",
+		"tsconfig": "workspace:*"
+	},
+	"dependencies": {
+		"@strapi/plugin-i18n": "4.9.0",
+		"@strapi/plugin-users-permissions": "4.9.0",
+		"@strapi/provider-upload-aws-s3": "4.9.0",
+		"@strapi/strapi": "4.9.0",
+		"better-sqlite3": "^8.0.1"
+	},
+	"strapi": {
+		"uuid": "b445770f-4cb4-4869-bd03-49054e233fb3"
+	},
+	"volta": {
+		"extends": "../../package.json"
+	}
+}

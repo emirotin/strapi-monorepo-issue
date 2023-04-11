@@ -1,0 +1,5 @@
+{
+	"extends": "tsconfig/strapi-admin.json",
+	"include": ["../plugins/**/admin/src/**/*", "./"],
+	"exclude": ["node_modules/", "build/", "dist/", "**/*.test.ts"]
+}
